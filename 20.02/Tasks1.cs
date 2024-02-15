@@ -45,10 +45,9 @@ namespace _20._02
 		public static void First()
 		{
 			var anonStudents = groups.SelectMany(group => group.Students,
-													(group, student) =>
-													new
+													(group, student) => new
 													{
-														Name = student.Name,
+														student.Name,
 														GroupName = group.Title
 													});
 
@@ -61,28 +60,60 @@ namespace _20._02
 		}
 		public static void Second()
 		{
-			var orderedStudents = groups.SelectMany(group => group.Students)
-									.OrderBy(student => student.Name);
+			var orderedStudents = groups.SelectMany(group => group.Students,
+													(group, student) => new
+													{
+														student.Name,
+														student.Age,
+														Group = group.Title
+													})
+										.OrderBy(student => student.Name)
+										.GroupBy(student => student.Group);
 
 			Console.WriteLine("\nAll students ordered by name\n");
 
-			foreach (var student in orderedStudents)
+			foreach (var group in orderedStudents)
 			{
-				Console.WriteLine(student.Name);
+				Console.WriteLine($"Group name: {group.Key}\n" +
+					$"Students:\n");
+
+				foreach(var student in group)
+				{
+					Console.WriteLine($"Name: {student.Name}\n" +
+						$"Age: {student.Age}\n");
+				}
+				Console.WriteLine();
 			}
+			Console.WriteLine();
 		}
 
 		public static void Third()
 		{
-			var sortedStudents = groups.SelectMany(group => group.Students)
-									   .Where(student => student.Age > 20);
+			var sortedStudents = groups.SelectMany(group => group.Students,
+													(group, student) => new
+													{
+														student.Name,
+														student.Age,
+														Group = group.Title
+													})
+									   .Where(student => student.Age > 20)
+									   .GroupBy(student => student.Group); ;
 
 			Console.WriteLine("\nAll students sorted by age\n");
 
-			foreach (var student in sortedStudents)
+			foreach (var group in sortedStudents)
 			{
-				Console.WriteLine($"Name: {student.Name}, Age: {student.Age}");
+				Console.WriteLine($"Group name: {group.Key}\n" +
+					$"Students:\n");
+
+				foreach (var student in group)
+				{
+					Console.WriteLine($"Name: {student.Name}\n" +
+						$"Age: {student.Age}\n");
+				}
+				Console.WriteLine();
 			}
+			Console.WriteLine();
 		}
 	}
 }

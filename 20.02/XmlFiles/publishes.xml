@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPublish xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Publish>
+    <Id>ac8be795-2074-4725-9f8b-56c6a9b2aef2</Id>
+    <Title>Eksmo</Title>
+    <City>Moscow</City>
+  </Publish>
+  <Publish>
+    <Id>81806321-a6c0-43cc-a36b-9be05e6c31f0</Id>
+    <Title>Hornbook</Title>
+    <City>Saint Petersburg</City>
+  </Publish>
+  <Publish>
+    <Id>e61de397-51c8-469a-a1b5-2036619a577d</Id>
+    <Title>Neoclassic</Title>
+    <City>Moscow</City>
+  </Publish>
+</ArrayOfPublish>

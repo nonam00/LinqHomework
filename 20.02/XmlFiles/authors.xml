@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfAuthor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Author>
+    <Id>d69ca6ac-abee-4dc8-bf83-6545de685fe4</Id>
+    <FirstName>Franz</FirstName>
+    <LastName>Kafka</LastName>
+  </Author>
+  <Author>
+    <Id>a66097ce-7f62-4a36-a778-78890be6d8ad</Id>
+    <FirstName>Haruki</FirstName>
+    <LastName>Murakami</LastName>
+  </Author>
+  <Author>
+    <Id>4e205409-b613-406b-9145-2f126c88bfab</Id>
+    <FirstName>Albert</FirstName>
+    <LastName>Camus</LastName>
+  </Author>
+</ArrayOfAuthor>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfBook xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Book>
+    <Title>Castle</Title>
+    <IdAuthor>d69ca6ac-abee-4dc8-bf83-6545de685fe4</IdAuthor>
+    <IdPublish>81806321-a6c0-43cc-a36b-9be05e6c31f0</IdPublish>
+    <Price>250</Price>
+  </Book>
+  <Book>
+    <Title>The Stranger</Title>
+    <IdAuthor>4e205409-b613-406b-9145-2f126c88bfab</IdAuthor>
+    <IdPublish>e61de397-51c8-469a-a1b5-2036619a577d</IdPublish>
+    <Price>425</Price>
+  </Book>
+  <Book>
+    <Title>Norwegian wood</Title>
+    <IdAuthor>a66097ce-7f62-4a36-a778-78890be6d8ad</IdAuthor>
+    <IdPublish>ac8be795-2074-4725-9f8b-56c6a9b2aef2</IdPublish>
+    <Price>500</Price>
+  </Book>
+  <Book>
+    <Title>1q84</Title>
+    <IdAuthor>a66097ce-7f62-4a36-a778-78890be6d8ad</IdAuthor>
+    <IdPublish>ac8be795-2074-4725-9f8b-56c6a9b2aef2</IdPublish>
+    <Price>800</Price>
+  </Book>
+  <Book>
+    <Title>The Plague</Title>
+    <IdAuthor>4e205409-b613-406b-9145-2f126c88bfab</IdAuthor>
+    <IdPublish>e61de397-51c8-469a-a1b5-2036619a577d</IdPublish>
+    <Price>240</Price>
+  </Book>
+  <Book>
+    <Title>Metamorphosis</Title>
+    <IdAuthor>d69ca6ac-abee-4dc8-bf83-6545de685fe4</IdAuthor>
+    <IdPublish>81806321-a6c0-43cc-a36b-9be05e6c31f0</IdPublish>
+    <Price>180</Price>
+  </Book>
+</ArrayOfBook>
